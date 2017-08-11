@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67570572-607A-4FC3-AA56-2B84162335CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDCardView</RootNamespace>
+    <AssemblyName>IDCardView</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainView\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView\frmEdit.designer.cs">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView\frmEnrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView\frmEnrollment.designer.cs">
+      <DependentUpon>frmEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView\frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsView\frmConfigureWorkStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsView\frmConfigureWorkStation.designer.cs">
+      <DependentUpon>frmConfigureWorkStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsView\frmLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsView\frmLanguage.designer.cs">
+      <DependentUpon>frmLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsView\frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsView\frmSplashScreen.designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsView\frmSWGrpName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsView\frmSWGrpName.designer.cs">
+      <DependentUpon>frmSWGrpName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsView\frmSWImportDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsView\frmSWImportDesign.designer.cs">
+      <DependentUpon>frmSWImportDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsView\frmSWIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsView\frmSWIntro.designer.cs">
+      <DependentUpon>frmSWIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsView\frmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsView\frmWelcome.designer.cs">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainView\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView\frmEnrollment.resx">
+      <DependentUpon>frmEnrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SettingsView\frmConfigureWorkStation.resx">
+      <DependentUpon>frmConfigureWorkStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsView\frmLanguage.resx">
+      <DependentUpon>frmLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsView\frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsView\frmSWGrpName.resx">
+      <DependentUpon>frmSWGrpName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsView\frmSWImportDesign.resx">
+      <DependentUpon>frmSWImportDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsView\frmSWIntro.resx">
+      <DependentUpon>frmSWIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsView\frmWelcome.resx">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SettingsView\SettingsFile.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
